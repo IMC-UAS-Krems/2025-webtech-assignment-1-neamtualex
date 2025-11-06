@@ -1,0 +1,251 @@
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Ensures that  the padding and border are both included in the elements total width, height */
+}
+
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: black; 
+    color: white; 
+}
+
+
+#header {
+    width: 100%; /* Makes the header take the full width o */
+    height: 100vh; /* Makes the header take the full height */
+    background-size: cover; /* Ensures background image covers evertyhing */
+    background-position: center; /*  IT Centers the background image */
+    background-color: black; 
+    position: relative; 
+}
+
+.container {
+    padding: 20px 10%; /* Adds padding to the container */
+}
+
+
+nav ul {
+    display: flex; /* Uses flexbox to arrange items  */
+    list-style: none; /* Removes \list style */
+    padding-left: 0; 
+    justify-content: center; /* Centers the list things/items */
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; /*removes text decoration*/
+    font-size: 18px; 
+    position: relative; 
+}
+
+
+nav ul li a::after {
+    content: ''; 
+    width: 0; 
+    height: 3px;
+    background: #FFD700; 
+    position: absolute; 
+    left: 0; /* Aligns  to the left */
+    bottom: -6px; /* Positions the underline slightly below the text */
+    transition: width 1s; /*  transitions */
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+.content {
+    display: flex; /* Uses flexbox for the layout */
+    align-items: center; /* Centers items  */
+    justify-content: center; /* Centers items */
+    flex-direction: column; /* Stacks items  */
+    padding-top: 50px; /* Adds top padding */
+}
+
+
+.header-text {
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 20px; /* Adds space below the text */
+}
+
+.blue {
+    color: blue; 
+}
+
+.yellow {
+    color: yellow; 
+}
+
+.red {
+    color: red; 
+}
+
+
+.header-text p {
+    font-size: 20px; 
+}
+
+.header-text h1 {
+    font-size: 40px; 
+    margin-top: 10px; /* Adds space above the heading */
+}
+
+
+.profile-container {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks items  */
+    align-items: center; /* Centers items  */
+    gap: 10px; /* Adds space between  */
+    position: relative; 
+}
+
+.profile-photo, .flag {
+    width: 110px; /* Sets the width for images */
+    height: auto; /* height auto */
+    border-radius: 10px; /* Rounds the corners of images */
+}
+
+/* Reset styles */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets Arial as the font */
+    background-color: black; 
+    color: white; 
+    text-align: center; /* Centet align text */
+}
+
+
+#header {
+    width: 100%; 
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-color: black;  
+    position: relative; /* relative position */
+}
+
+
+.container1 {
+    padding: 20px 10%; 
+}
+/* style the nav bar */
+nav {
+    display: flex; /* Flexbox  */
+    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding-left: 10px; 
+}
+
+
+
+
+
+ul {
+    display: flex; /* Flexbox for list items */
+    padding-left: 0; /* Removes default padding */
+}
+
+nav ul li {
+    display: inline-block; /*inline blocl*/
+    list-style: none; 
+    margin: 10px 20px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; /* Font size */
+    position: relative; 
+}
+
+nav ul li a::after {
+    content: ''; 
+    width: 0; 
+    height: 3px; /* Thickness */
+    background: #FFD700; 
+    position: absolute; 
+    left: 0; 
+    bottom: -6px; 
+    transition: width 1s; /* transition width */
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+
+h1 {
+    margin-top: 50px; /* Top margin */
+    color: #FFD700; 
+    text-align: center; /* Centered */
+}
+
+
+.table table {
+    width: 90%; /* to make Table width */
+    margin: 20px auto; 
+    border-collapse: collapse; 
+    font-size: 20px; 
+    background-color: black; 
+    color: white; }
+
+.table th, .table td {
+    padding: 15px 20px; 
+    border: 2px solid white; 
+    text-align: center; /* Center  the text */
+}
+
+p {
+    color: #FFD700; 
+}
+
+td {
+    color: whitesmoke; 
+}
+
+
+.hilltop {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 20px;               
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .hilltop-item {
+    flex: 0 1 300px;          
+    max-width: 320px;         
+    text-align: center;
+    padding: 0;
+  }
+  
+  .hilltop-item img {
+    width: 100%;
+    height: 300px;           
+    border-radius: 10px;
+  }
+  
+  .hilltop-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+    transition: 2s;
+  }
+  
+  .hilltop-item img:active { transform: scale(0.95); }
+
